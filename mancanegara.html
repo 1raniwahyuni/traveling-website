@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist View</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- link fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<!-- ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+<section class="header-mancanegara">
+    <nav>
+        <a href="index.html"><img src="image/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <strong><li><a href="index.html">HOME</a></li></strong>
+                <strong><li><a href="journey.html">OUR JOURNEY</a></li></strong>
+                <strong><li><a href="coming.html">COMING SOON</a></li></strong>
+                <strong><li><a href="article.html">ARTICLE</a></li></strong>
+                <strong><li><a href="gallery.html">GALLERY</a></li></strong>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+        <h1>Menjelajahi Mancanegara Dengan Tourist View</h1>
+        <p>Jangan Lewatkan Kesempatan Untuk Menikmati Perjalanan Mancanegara Yang Menyenangkan Bersama Tourist View</p>
+    </div>
+</section>
+
+<section class="journey-mancanegara">
+    <h2>Wisata Mancanegara</h2>
+    <div class="col">
+        <div class="card cardm1">
+            <a href="disney.html" class="hero-btn">Read More</a>
+            <h5>Disneyland Tokyo</h5>
+        </div>
+        <div class="card cardm2">
+            <a href="keukenhof.html" class="hero-btn">Read More</a>
+            <h5>Keukenhof Garden</h5>
+        </div>
+    </div>
+</div>
+</section>
+
+<footer class="footer">
+    <div class="footer-left">
+        <h3>Tourist View </h3>
+        <p class="footer-copyright">Copyright &copy Tourist View 2023</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class=" fa fa-solid fa-location-dot"></i>
+            <p><span>Indonesia</span> Kemanggisan, Jakarta Barat</p>
+        </div>
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+62 876 - 8769 - 0099</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p>touristview30@gmail.com</p>
+        </div>
+    </div>
+
+    <div class="footer-right">
+        <p class="footer-about"> <span>About</span>
+            Di Web ini kami membagikan cerita dan pengalaman kami menjelajahi nusantara dan mancanegara. Jangan lewatkan konten menarik yang akan terus kami hadirkan. 
+            Silakan bagikan website ini ke semua orang dan biarkan mereka menikmati cerita-cerita kami. (◕‿◕) </p>
+
+        <div class="footer-media">
+            <a href="https://www.youtube.com/@touristreview"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.facebook.com/Jokowi/?locale=id_ID"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/xaeeelll?t=kw-DMRGbzTgb2TrdOIFisw&s=08"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/tourist_view/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!-- JAVASCRIPT TOGGLE MENU -->
+<script>
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

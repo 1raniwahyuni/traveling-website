@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title> Welcome </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<section class="indexjs">
+    <div class="container">
+        <div class="header">
+            <h1>Hai! Let's See Our Journey</h1>
+        </div>
+        <div class="button">
+            <button type="submit" class="btn" onclick="myFunction()"> Let's Go </button>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x;
+            var r = confirm("OOPPSS! Sorry If We Hold You Here, Let's Go!");
+            if (r == true) {
+                x = "Lets go !!!";
+                window.location.href = "index.html";
+            }
+            else {
+                x = "You pressed Cancel!";
+            }
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+</section>
+
+
+</body>
+
+</html>
